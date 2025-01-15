@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <AdicionarAluno.c>
 
 int MenuPrincipal(){
 
@@ -47,7 +48,7 @@ int Gerir(){
     switch (escolha)
     {
     case 1:
-        printf ("Inserir localizaçao");
+        AdicionarAluno();
         break;
 
     case 2:

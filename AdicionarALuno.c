@@ -7,17 +7,17 @@
 
      typedef struct
     {
-        char rua;
-        char porta;
-        char postal;
-    }morada;
+        char rua[999];
+        char porta[999];
+        char postal[999];
+    }house;
     typedef struct
     {
         
         int id;
         char nome[100], curso [100];
         datas nascimento;
-        morada morada;
+        house moradas;
     }estudante;
 
 int AdicionarAluno(){
@@ -52,11 +52,11 @@ int AdicionarAluno(){
 
         printf ("Digite a sua Morada:\n");
         printf ("Rua: ");
-        fgets(estudantes[i].morada.rua, sizeof(estudantes[i].morada), stdin);     
-        printf ("Nº da Porta: ");
-         fgets(estudantes[i].morada.porta, sizeof(estudantes[i].morada), stdin);   
-        printf ("Codigo Postal: ");
-         fgets(estudantes[i].morada.postal, sizeof(estudantes[i].morada), stdin);        
+        fgets(estudantes[i].moradas.rua, sizeof(estudantes[i].moradas).rua, stdin);    
+        //printf ("Nº da Porta: ");
+        //fgets(estudantes[i].moradas.porta, sizeof(estudantes[i].moradas.porta), stdin);   
+       // printf ("Codigo Postal: ");
+        //fgets(estudantes[i].moradas.postal, sizeof(estudantes[i].moradas.postal), stdin);        
 
         printf ("Digite o seu Curso: ");
         fgets(estudantes[i].curso, sizeof(estudantes[i].curso), stdin);
@@ -76,7 +76,7 @@ int AdicionarAluno(){
 
         for (int i = 0; i < a; i++) {
 
-        fprintf(ficheiro,"%d;%s;%s;%s;%d;\n", estudantes[i].id, estudantes[i].nome, estudantes[i].morada, estudantes[i].curso, estudantes[i].nascimento);
+        fprintf(ficheiro,"%d;%s;%s;%s;%d;\n", estudantes[i].id, estudantes[i].nome, estudantes[i].moradas, estudantes[i].curso, estudantes[i].nascimento);
 
     }
     
