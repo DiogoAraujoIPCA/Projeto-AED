@@ -94,7 +94,6 @@ int Pesquisar(){
     }
 }
 
-
 int Verificar(){
 
    int escolha;
@@ -138,11 +137,11 @@ int main () {
         break;
     
     case 2:
-        printf ("Ola");
+        Pesquisar();
         break;
     
     case 3:
-        printf ("Ola");
+        Verificar();
         break;
     
     case 4:
