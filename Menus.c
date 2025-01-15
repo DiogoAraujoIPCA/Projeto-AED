@@ -1,9 +1,4 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <ctype.h>
-
 
 int MenuPrincipal(){
 
@@ -52,15 +47,15 @@ int Gerir(){
     switch (escolha)
     {
     case 1:
-        
+        printf ("Inserir localizaçao");
         break;
 
     case 2:
-        EditarAluno();
+        printf ("Inserir localizaçao");
         break;
 
     case 3:
-        RemoverAluno();
+        printf ("Inserir localizaçao");
         break;
     }
 
@@ -88,16 +83,17 @@ int Pesquisar(){
     switch (escolha)
     {
     case 1:
-        PesquisarAluno();
+        printf ("Inserir localizaçao");
         break;
 
     case 2:
-        PesquisarID();
+        printf ("Inserir localizaçao");
         break;
 
     return escolha;
     }
 }
+
 
 int Verificar(){
 
@@ -120,11 +116,11 @@ int Verificar(){
     switch (escolha)
     {
     case 1:
-        VerificarCurso();
+        printf ("Inserir localizaçao");
         break;
 
     case 2:
-        VerificarAll();
+        printf ("Inserir localizaçao");
         break;
 
     return escolha;
@@ -142,11 +138,11 @@ int main () {
         break;
     
     case 2:
-        Pesquisar();
+        printf ("Ola");
         break;
     
     case 3:
-        Verificar();
+        printf ("Ola");
         break;
     
     case 4:
